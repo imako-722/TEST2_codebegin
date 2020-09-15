@@ -1,0 +1,606 @@
+@charset "UTF-8";
+@import "variables";
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ,
+    Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+body {
+  background: url(../images/bg.png);
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+// a {
+//   font-size: 1.5rem;
+//   line-height: 3rem;
+// }
+
+p,
+a {
+  @include font-data-c(1.5rem, 3rem, #666);
+}
+
+a:hover {
+  color: #0e36ca;
+}
+
+h2,
+h3 {
+  @include font-data(1.8rem, 3.6rem);
+}
+
+h4 {
+  @include font-data-w(1.5rem, 3rem, 700);
+  // font-size: 1.5rem;
+  // line-height: 3rem;
+  // font-weight: 700;
+}
+// slick-initialized slick-slider
+.slick-box,
+.slick-initialized,
+.slick-slider {
+  button {
+    display: none;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.body-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* header */
+.header {
+  border-top: 5px solid #0e37ca;
+  position: relative;
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    display: inline;
+  }
+
+  .header-logo {
+    max-width: 300px;
+    margin: 37px 14%;
+    padding-right: 5px;
+  }
+
+  .header-list {
+    display: flex;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .nav-active {
+    background-color: #e6ebfa;
+  }
+  .nav-item {
+    width: 16.666%;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #d2d2d2;
+
+    a {
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      padding: 12px 5px;
+    }
+
+    .nav-title {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+      font-weight: 700;
+      color: #666666;
+      text-decoration: none;
+    }
+
+    .nav-item-detail {
+      font-size: 1rem;
+      line-height: 1.6rem;
+      letter-spacing: 0.2rem;
+      color: #bababa;
+    }
+
+    .nav-detail-wrapper-active {
+      border-left: 3px solid #113eec;
+    }
+
+    .nav-detail-wrapper {
+      width: 100%;
+      border-left: 3px solid #fff;
+      // margin: 12px 4px;
+    }
+
+    &:hover {
+      background-color: #e6ebfa;
+      .nav-detail-wrapper {
+        border-left: 3px solid #113eec;
+      }
+
+      .nav-title {
+        color: #113eec;
+      }
+    }
+  }
+
+  .b-none {
+    border: none;
+  }
+  // ハンバーガーメニュー
+  .humberger {
+    display: none;
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    border: 1px solid #333333;
+    margin: 15px 20px 0 0;
+    position: relative;
+
+    span {
+      display: block;
+      height: 4px;
+      width: 60%;
+      background: #333333;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &:nth-of-type(1) {
+        transform: translate(-50%, -12px);
+      }
+      &:nth-of-type(3) {
+        transform: translate(-50%, 8px);
+      }
+    }
+  }
+  .active {
+    span:nth-of-type(1) {
+      width: 70%;
+      height: 3.2px;
+      -webkit-transform: translateY(20px) rotate(-45deg);
+      transform: translate(-17px, -50%) rotate(-45deg);
+    }
+    span:nth-of-type(2) {
+      opacity: 0;
+    }
+    span:nth-of-type(3) {
+      width: 70%;
+      height: 3.2px;
+      -webkit-transform: translateY(-20px) rotate(45deg);
+      transform: translate(-17px, -50%) rotate(45deg);
+    }
+  }
+  .humberger-nav {
+    width: 100%;
+    height: 570px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+
+    .h-nav-list {
+      .h-nav-item {
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        a {
+          width: 100%;
+          text-decoration: none;
+          width: 100%;
+          height: 100%;
+          .h-nav-detail {
+            width: 100%;
+            padding: 15px 20px;
+            .h-nav-title {
+              @include font-data-c(2rem, 4rem, #fff);
+            }
+            .h-nav-sub-title {
+              @include font-data-c(1.2rem, 2.4rem, #fff);
+            }
+          }
+        }
+      }
+    }
+  }
+  .h-nav-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// home
+// fv
+.fv-wrapper {
+  .fv-img {
+    max-width: 100%;
+  }
+}
+
+// main
+.main-container {
+  display: flex;
+  max-width: 100%;
+  padding: 35px 35px 0;
+}
+.main-wrapper {
+  width: 75%;
+  margin-right: 45px;
+}
+.section-wrapper {
+  margin-bottom: 50px;
+}
+
+.section-inner {
+  max-width: 100%;
+  padding: 0px 20px 15px;
+}
+
+.section-title {
+  display: inline-block;
+  width: 100%;
+  font-weight: 400;
+  color: #fff;
+  background-color: #113eec;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    border-left: 3px solid #819ff0;
+    padding: 0 10px;
+  }
+}
+
+.section-sub-title {
+  display: inline-block;
+  width: 100%;
+  font-weight: 400;
+  color: #666;
+  background-color: #f6f6f6;
+  padding: 5px 20px;
+  border: 1px solid #bababa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.title-red {
+  color: #ff0000;
+}
+
+//更新情報・お知らせ
+.inform-list {
+  .inform-item {
+    display: flex;
+    border-bottom: 1px solid #d2d2d2;
+
+    .new-red {
+      @include font-data-c(1.1rem, 1.6rem, #fff);
+      background-color: #ff0000;
+      border-radius: 2px;
+      padding: 1px 5px;
+      margin-left: 5px;
+    }
+
+    .date {
+      letter-spacing: 0.15rem;
+      color: #0e37ca;
+      margin-right: 25px;
+    }
+  }
+}
+.past-log {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.section-mini-title {
+  color: #ff0000;
+  margin-top: 15px;
+}
+
+// sideber
+.side-wrapper {
+  width: 25%;
+  margin-bottom: 30px;
+}
+.side-section-b {
+  border: 1px solid #d2d2d2;
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.section-company {
+  padding-bottom: 15px;
+  .section-company-inner {
+    text-align: center;
+  }
+  p {
+    @include font-data(1.1rem, 1.7rem);
+
+    .sidber-company-title {
+      @include font-data-w(1.5rem, 3rem, 700);
+    }
+  }
+}
+.side-section {
+  margin-bottom: 20px;
+}
+.side-title {
+  font-size: 1.5rem;
+  line-break: 3rem;
+  font-weight: 700;
+  color: #666;
+  background-color: #eeeeee;
+  border-top: 5px solid #0e37ca;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 13px 10px;
+}
+
+.side-list {
+  a {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  .list-hover {
+    background-color: rgba(255, 255, 255, 0);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .list-item {
+    border-bottom: 1px solid #d2d2d2;
+
+    &:hover {
+      .list-ex {
+        color: #0e37ca;
+      }
+    }
+
+    .list-item-flex {
+      display: flex;
+      padding: 10px;
+
+      .side-img {
+        width: 20%;
+        margin-right: 5px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .list-title {
+        @include font-data-c(1.1rem, 1.3rem, #0e36ca);
+      }
+
+      .list-ex {
+        @include font-data(1.1rem, 1.3rem);
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.footer {
+  background-color: #0e37ca;
+  text-align: center;
+  padding: 15px;
+  .footer-inner {
+    .footer-large {
+      font-size: 1.3rem;
+      line-height: 2.5rem;
+      color: #fff;
+    }
+
+    .footer-min {
+      font-size: 1.2rem;
+      line-height: 2.4rem;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// company
+.red {
+  color: #ff0000;
+}
+.bg-gray-p {
+  background-color: #cccccc;
+  color: #333333;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.p-block {
+  margin-top: 10px;
+}
+
+.top-title {
+  margin-top: 0;
+}
+
+// company-table
+table,
+td,
+th {
+  border: 1px solid #cccccc;
+}
+
+.table {
+  width: 100%;
+  @include font-data-c(1.5rem, 3rem, #666666);
+
+  th {
+    width: 21%;
+    font-weight: 400;
+  }
+
+  td {
+    width: 79%;
+    padding: 10px 15px;
+  }
+}
+
+// service
+.service-list {
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid #d2d2d2;
+  margin-bottom: 20px;
+
+  .service-a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.3s;
+
+    .service-p p {
+      transition: 0.3s;
+    }
+
+    img {
+      width: 30%;
+      float: left;
+      margin-right: 10px;
+    }
+    .arrow {
+      // display: inline-block;
+      color: #fff;
+      background-color: #7d7d7d;
+      border-radius: 3px;
+      padding: 0 8px;
+      transition: 0.3s;
+      float: right;
+    }
+
+    &:hover {
+      background-color: #fff;
+
+      .service-p p {
+        color: #0e36ca;
+      }
+
+      .arrow {
+        background-color: black;
+      }
+    }
+  }
+}
+.service-title {
+  display: inline-block;
+  @include font-data-c(1.8rem, 3.6rem, #0e36ca);
+}
+
+.service-nomal {
+  padding: 20px;
+}
+
+// recrit
+.recrit-table {
+  margin-bottom: 20px;
+
+  .table-title {
+    text-align: left;
+    padding: 10px 15px;
+  }
+}
+.section-table {
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+// contact
+
+.form-table {
+  margin-bottom: 20px;
+  .text-title {
+    vertical-align: middle;
+  }
+  input {
+    width: 50%;
+  }
+  textarea {
+    width: 97%;
+    height: 185px;
+  }
+}
+
+form {
+  .btn-wrapper {
+    text-align: center;
+    .btn {
+      font-size: 1.5rem;
+      background-color: #f6f6f6;
+      border: 1px solid #d2d2d2;
+      border-radius: 3px;
+      padding: 5px 10px;
+      &:hover {
+        background-color: #fff;
+        border: 1px solid #7d7d7d;
+      }
+    }
+  }
+}
+
+//トップに戻るボタン
+#page_top {
+  position: fixed;
+  bottom: 110px;
+  right: 3%;
+}
+#page_top a {
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 18px;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #999;
+  }
+}

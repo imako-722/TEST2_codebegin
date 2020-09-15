@@ -1,0 +1,25 @@
+@mixin font-data($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-data-c($font-size, $line-height, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin font-data-w($font-size, $line-height, $font-weight) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+// メディアクエリー
+$md: 768px;
+
+@mixin mq {
+  @media screen and (max-width: ($md)) {
+    @content;
+  }
+}

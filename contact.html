@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST2</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sp.css" />
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <!--header-->
+      <header class="header clearfix">
+        <div class="d-flex">
+          <h1 class="title">
+            <a href="home.html">
+              <img class="header-logo" src="images/logo.png" alt=""
+            /></a>
+          </h1>
+
+          <!-- ハンバーガーメニューのアイコン -->
+          <div class="humberger" id="humberger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- ハンバーガーメニューの中身 -->
+        <nav class="humberger-nav" id="humberger-nav">
+          <ul class="h-nav-list">
+            <li class="h-nav-item">
+              <a href="home.html">
+                <div class="h-nav-detail">
+                  <p class="h-nav-title">ホーム</p>
+                  <p class="h-nav-sub-title">HOME</p>
+                </div>
+              </a>
+            </li>
+            <li class="h-nav-item">
+              <a href="company.html">
+                <div class="h-nav-detail">
+                  <p class="h-nav-title">会社概要</p>
+                  <p class="h-nav-sub-title">COMPANY</p>
+                </div>
+              </a>
+            </li>
+            <li class="h-nav-item">
+              <a href="service.html">
+                <div class="h-nav-detail">
+                  <p class="h-nav-title">サービス</p>
+                  <p class="h-nav-sub-title">SERVICE</p>
+                </div>
+              </a>
+            </li>
+            <li class="h-nav-item">
+              <a href="recrit.html">
+                <div class="h-nav-detail">
+                  <p class="h-nav-title">採用情報</p>
+                  <p class="h-nav-sub-title">RECRIT</p>
+                </div>
+              </a>
+            </li>
+            <li class="h-nav-item">
+              <a href="link.html">
+                <div class="h-nav-detail">
+                  <p class="h-nav-title">リンク</p>
+                  <p class="h-nav-sub-title">LINK</p>
+                </div>
+              </a>
+            </li>
+            <li class="h-nav-item">
+              <a href="contact.html">
+                <div class="h-nav-detail">
+                  <p class="h-nav-title">お問い合わせ</p>
+                  <p class="h-nav-sub-title">CONTACT</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ヘッダーのナビ -->
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="nav-item">
+              <a class="nav-item-a" href="home.html">
+                <div class="nav-detail-wrapper">
+                  <p class="nav-title">ホーム</p>
+                  <p class="nav-item-detail">HOME</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="company.html">
+                <div class="nav-detail-wrapper">
+                  <p class="nav-title">会社概要</p>
+                  <p class="nav-item-detail">COMPANY</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="service.html">
+                <div class="nav-detail-wrapper">
+                  <p class="nav-title">サービス</p>
+                  <p class="nav-item-detail">SERVICE</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="recrit.html">
+                <div class="nav-detail-wrapper">
+                  <p class="nav-title">採用情報</p>
+                  <p class="nav-item-detail">RECRIT</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="link.html">
+                <div class="nav-detail-wrapper">
+                  <p class="nav-title">リンク</p>
+                  <p class="nav-item-detail">LINK</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item b-none nav-active">
+              <a href="contact.html">
+                <div class="nav-detail-wrapper-active">
+                  <p class="nav-title">お問い合わせ</p>
+                  <p class="nav-item-detail">CONTACT</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- main -->
+      <div class="main-container">
+        <div class="main-wrapper">
+          <section class="section-wrapper section-table mb-0">
+            <h2 class="section-title">お問い合わせ</h2>
+            <div class="section-inner">
+              <p>
+                当ページと同じ３項目のお問い合わせフォーム（自動フォーム試用版）を簡単に使えるようにセットしています。<br /><span
+                  class="red"
+                  >※当ページ（contact.html）はフォームの見本ページです。実際の自動フォームには使いませんのでご注意下さい。</span
+                >
+              </p>
+              <h4 class="section-mini-title">
+                ■自動フォームを使う場合（※編集に入る前にご確認下さい）
+              </h4>
+              <p>
+                あなたのメールアドレス設定と、簡単な編集だけで使えます。<a
+                  href="#"
+                  >こちらのマニュアルをご覧下さい。</a
+                >
+              </p>
+              <h4 class="section-mini-title">■自動フォームを使わない場合</h4>
+              <p>
+                テンプレートに梱包されている「form.html」「confirm.html」「finish.html」の3枚のファイルを削除して下さい。
+              </p>
+            </div>
+            <form>
+              <table class="table form-table">
+                <tr>
+                  <th>お名前※</th>
+                  <td><input class="name-form" type="text" name="name" /></td>
+                </tr>
+                <tr>
+                  <th>メールアドレス※</th>
+                  <td>
+                    <input class="email-form" type="text" name="e-mail" />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-title">お問い合わせ詳細※</th>
+                  <td>
+                    <textarea name="contact" class="text-form"></textarea>
+                  </td>
+                </tr>
+              </table>
+              <div class="btn-wrapper">
+                <input class="btn" type="submit" value="内容を確認する" />
+              </div>
+            </form>
+          </section>
+        </div>
+        <!-- sidber -->
+        <aside class="side-wrapper">
+          <section class="side-section-b">
+            <h2 class="side-title">Menu</h2>
+            <ul class="side-list">
+              <li class="list-item list-hover"><a href="#">メニュー</a></li>
+              <li class="list-item list-hover"><a href="#">メニュー</a></li>
+              <li class="list-item list-hover"><a href="#">メニュー</a></li>
+            </ul>
+          </section>
+
+          <section class="side-section">
+            <h2 class="side-title">Menu</h2>
+            <ul class="side-list">
+              <li class="list-item"><a href="#">メニュー</a></li>
+              <li class="list-item"><a href="#">メニュー</a></li>
+              <li class="list-item"><a href="#">メニュー</a></li>
+            </ul>
+          </section>
+
+          <section class="side-section-b">
+            <h2 class="side-title">製品情報</h2>
+            <ul class="side-list">
+              <li class="list-item list-hover">
+                <a class="list-item-flex" href="#">
+                  <div class="side-img">
+                    <img src="images/sample1.jpg" alt="#" />
+                  </div>
+                  <div class="list-detail">
+                    <p class="list-title">製品情報</p>
+                    <p class="list-ex">簡単な説明をここに入れます</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item list-hover">
+                <a class="list-item-flex" href="#">
+                  <div class="side-img">
+                    <img src="images/sample1.jpg" alt="#" />
+                  </div>
+                  <div class="list-detail">
+                    <p class="list-title">製品情報</p>
+                    <p class="list-ex">簡単な説明をここに入れます</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item list-hover">
+                <a class="list-item-flex" href="#">
+                  <div class="side-img">
+                    <img src="images/sample1.jpg" alt="#" />
+                  </div>
+                  <div class="list-detail">
+                    <p class="list-title">製品情報</p>
+                    <p class="list-ex">簡単な説明をここに入れます</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="side-section">
+            <h2 class="side-title">製品情報</h2>
+            <ul class="side-list">
+              <li class="list-item">
+                <a class="list-item-flex" href="#">
+                  <div class="side-img">
+                    <img src="images/sample1.jpg" alt="#" />
+                  </div>
+                  <div class="list-detail">
+                    <p class="list-title">製品情報</p>
+                    <p class="list-ex">簡単な説明をここに入れます</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="list-item-flex" href="#">
+                  <div class="side-img">
+                    <img src="images/sample1.jpg" alt="#" />
+                  </div>
+                  <div class="list-detail">
+                    <p class="list-title">製品情報</p>
+                    <p class="list-ex">簡単な説明をここに入れます</p>
+                  </div>
+                </a>
+              </li>
+              <li class="list-item">
+                <a class="list-item-flex" href="#">
+                  <div class="side-img">
+                    <img src="images/sample1.jpg" alt="#" />
+                  </div>
+                  <div class="list-detail">
+                    <p class="list-title">製品情報</p>
+                    <p class="list-ex">簡単な説明をここに入れます</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="side-section-b section-company">
+            <h2 class="side-title">運営</h2>
+            <div class="section-company-inner">
+              <p>
+                <span class="sidber-company-title">株式会社SAMPLE COMPANY</span
+                ><br />東京都XX区XXXXビル3F<br />TEL:03-0000-0000<br />(AM9:00〜PM5:00
+                土日祝休み)
+              </p>
+            </div>
+          </section>
+        </aside>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-large">
+            Copyright©
+            <a class="footer-large" href="home.html">SAMPLE COMPANY</a> All
+            Rights Reserved.
+          </p>
+          <p class="footer-min">
+            <a class="footer-min" href="#">《Web Design:Template-Party》</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
