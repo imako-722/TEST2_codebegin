@@ -17,9 +17,10 @@
 
 // メディアクエリー
 $md: 768px;
+$xs: 480px;
 
-@mixin mq {
-  @media screen and (max-width: ($md)) {
+@mixin mq($size) {
+  @media screen and (max-width: ($size)) {
     @content;
   }
 }
