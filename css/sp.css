@@ -1,1 +1,115 @@
-/* No CSS *//*# sourceMappingURL=sp.css.map */
+@media screen and (max-width: 768px) {
+  .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  .main-wrapper {
+    width: 100%;
+  }
+  .side-wrapper {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .header .header-nav {
+    display: none;
+  }
+  .header .humberger {
+    display: block;
+  }
+  .mb-sp {
+    margin-bottom: 30px;
+  }
+  .m-t {
+    padding-top: 3%;
+  }
+  .table th {
+    width: 24%;
+  }
+  .table td {
+    width: 76%;
+  }
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2,
+  h3 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+  }
+  h4,
+  p,
+  a,
+  th,
+  td,
+  .inform-list .inform-item .date,
+  .section-company p .sidber-company-title {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .side-title {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+  }
+  .footer .footer-inner .footer-large,
+  .footer .footer-inner .footer-min {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .service-title {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+  }
+  .header .header-logo {
+    max-width: 205px;
+    margin: 40px 5%;
+  }
+  .section-title {
+    padding: 5px 10px;
+  }
+  .section-title::before {
+    padding: 0 4px;
+  }
+  .section-sub-title {
+    padding: 5px 10px;
+  }
+  .section-inner {
+    padding: 0 2.5% 15px;
+  }
+  .inform-list .inform-item .date {
+    margin-right: 20px;
+  }
+  .mb-sp {
+    margin-bottom: 10px;
+  }
+  .table th {
+    width: 28%;
+    vertical-align: middle;
+    padding: 5px 8px;
+  }
+  .table td {
+    width: 72%;
+    padding: 5px;
+  }
+  .service-list .service-a .arrow {
+    padding: 1px 9px;
+  }
+  .recrit-table .table-title {
+    padding: 5px;
+  }
+  .form-table input {
+    width: 97%;
+  }
+}
+/*# sourceMappingURL=sp.css.map */
